@@ -1,0 +1,474 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+:root{
+	/* theme colors */
+	--text-gray:#3f4954;
+	--text-light:#686666da;
+	--bg-color:#0f0f0f;
+	--white:#fff;
+	--midnight:#104f55;
+
+	/* gradient color */
+	--sky:linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+	--skyb:linear-gradient(270deg, #a1c4fd 0%, #c2e9fd 100%);
+
+}
+
+p{
+	font-size: 1.2rem;
+	margin: 1rem 0;
+}
+
+fieldset{
+	margin-bottom: 2vh;
+	border: none;
+}
+fieldset span{
+	margin: 0 2rem;
+	cursor: pointer;
+}
+i.fab, i.fas{
+	margin-bottom: 5px;
+}
+i.fab:hover, i.fas:hover {
+	color: blue;
+}
+
+
+/*---------------------------------------------------------------topnav --------------------------------------*/
+
+#toggle{
+	position: absolute;
+	right: 0;
+	width: 100%;
+	padding:0 5px;
+	text-align: right;
+	display: none;
+}
+
+
+.topnav{
+	width:100vw;
+	height: 5vh;
+	background: #000000;
+}
+.topnav h1{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+#navbar{
+	position: sticky;
+	top: 0;
+	z-index: 11;
+	width: 100vw;
+	height: 7vh;
+	padding-top: 13px;
+	background: #f7f7f7;
+	box-shadow: 0 0 50px rgba(0,0,0,0.6);
+	overflow: hidden;
+	transition: height .3s ease;
+}
+#navbar .nav{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 5px 10px;
+}
+#navbar .nav .logo{
+	cursor: pointer;
+	display: block;
+	margin-bottom: 1.3rem;
+}
+#navbar .nav .nav-items{
+	display: flex;
+	flex-wrap: wrap;
+}
+#navbar .nav .nav-items .nav-list a{
+	padding: 10px;
+	text-decoration: none;
+	color: #000;
+	transition: background 2s ease-in-out;
+}
+ .nav-items .nav-list a:hover{
+     background:linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+#navbar .nav .nav-items .nav-list{
+	list-style-type: none;
+	margin: 0 10px;
+}
+
+/*-----------------------x------------------------------------------top nav -------------------------x------------*/
+
+/*----------------------------------------------------------------first div -------------------------------------------------------*/
+
+.uid{
+	margin: 5vh 0;
+	display: flex;
+	width: 100vw;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 4rem 2rem;
+	overflow: hidden;
+    box-shadow:  0 0 50px rgba(0,0,0,0.4);
+}
+.uid .uinfo{
+	flex-basis: 40%;
+	padding: 10px;
+	padding-left: 30px;
+}
+.uid .uinfo h1{
+	text-transform: uppercase;
+	padding: 10px;
+	color: blue;
+	margin-bottom: 10px;
+	font-size: 3rem;
+	line-height: 4rem;
+}
+.uid .uinfo h2{
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.uid .uinfo h3{
+	margin-bottom: 10px;
+}
+.uid .uinfo > p{
+	font-style: italic;
+}
+.uid .uimg{
+	position: relative;
+	flex-basis: 60%;
+	display: flex;
+	justify-content: flex-end;
+	float: right;
+	overflow: hidden;
+	transform: rotate(-10deg) skew(15deg) scale(.6);
+	transition: transform 2s ease-in-out;
+}
+.uid .uimg img{
+	width: 70%;
+	margin-right: 8rem;
+	transition: transform 1s ease-in-out;
+
+}
+.uid .uimg:hover img{
+	transform: scale(1.5);
+}
+.uid .uimg h2{
+	color: white;
+	position: absolute;
+	font-size: 2rem;
+	display: block;
+	left: 15%;
+	bottom: 0;
+	transform: translateY(-70px);
+	display: none;
+	transition: all 2s ease;
+}
+.uid .uimg:hover{
+	transform: rotate(0deg) scale(.8);
+}
+.uid .uimg:hover h2{
+	display: block;
+}
+
+
+/*---------------------x-------------------------------first div -----------------------------x---------------------*/
+
+
+
+
+
+/*-------------------------------------------------------------------description --------------------------------------*/
+
+.info{
+	display: grid;
+	grid-template-columns: 25% 25% 25%;
+	width: 100vw;
+	justify-content: space-around;
+	margin: 2rem 0;
+	padding: 1rem 3rem;
+}
+#h{
+	text-align: center;
+}
+hr{
+	width: 20vw;
+	transform: translateX(40vw);
+}
+.info .serv{
+	width: 100%;
+	height: 40vh;
+	overflow: hidden;
+}
+.info .serv .col-1{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+.info .serv .col-1 h1{
+	position: absolute;
+	bottom: 0;
+	color: purple;
+	padding-left: 5px;
+}
+.info .serv .col-1 img{
+	width: 100%;
+	height: 100%;
+	transition: transform 1s ease;
+}
+.info .serv .col-1 img:hover{
+	transform: scale(1.4);
+}
+
+
+/*---------------------------x---------------------------------------description -----------------------x--------------*/
+
+/*-------------------------------------------------------------response --------------------------------------------------*/
+
+.response{
+	display: grid;
+	grid-template-columns: 70% 20%;
+	max-width: 800px;
+	height: 40vh;
+	margin: 2rem auto;
+	justify-content: space-between;
+}
+.main{
+	width: 100%;
+	background: #f7f7f7;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+}
+.main ol,ul{
+	padding-left: 20px;
+}
+
+aside{
+	width: 100%;
+}
+aside #holder{
+	position: relative;
+	width: 100px;
+	height:200px;
+}
+aside #holder img{
+	position: absolute;
+	width: 100%;
+	transition: transform 2s ease;
+}
+aside #holder:hover img:nth-child(1){
+ transform: translateY(-70px) translateX(-100px) rotate(-40deg);
+}
+aside #holder:hover img:nth-child(2){
+	transform: translateY(-80px);
+}
+aside #holder:hover img:nth-child(3){
+ transform: translateY(-70px) translateX(100px) rotate(40deg);
+}
+
+/*-------------------------------------------------------------response --------------------------------------------------*/
+
+
+
+/*------------------------------------------------------ footer ---------------------------------------------- */
+
+footer{
+	width: 100vw;
+	background: black;
+	color: white;
+	padding: 2vh 10vw 5vh;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.footchild h1{
+	margin-bottom: 2vh;
+	padding: 10px;
+}
+/*------------------------------------------------------ service-page ---------------------------------------------- */
+.container{
+	display: grid;
+	grid-template-columns: 60% 30%;
+	justify-content: space-between;
+	margin: 5vh auto;
+}
+.contain{
+
+}
+.sub-container{
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 10vh;
+}
+.sub-container .header{
+	text-align: center;;
+	color: blue;
+	width: 100%;
+	background: var(--sky);
+	padding: 10px;
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+.sidebar{
+	width: 100%;
+	padding: 0 1rem;
+}
+.body ul{
+	list-style-type: square;
+}
+.body ul li{
+	margin-bottom: 10px;
+}
+ .cover{
+ 	display: flex;
+ 	justify-content: space-between;
+ 	font-weight: bold;
+ }
+ .price{
+ 	flex-basis: 10%;
+ 	background: var(--sky);
+ 	color: blue;
+ 	cursor: pointer;
+ 	text-align:center;
+ }
+
+ .bonus{
+ 	background: var(--sky);
+ 	text-align: right;
+ 	border-radius: 10px;
+ 	padding: 5px 3px;
+ 	margin: 1px;
+ 	font-weight: bolder;
+ }
+
+/*------------------------------------------------------  ---------------------------------------------- */
+
+/*---------------------------------------------------------- media-query --------------------------------------------------------*/
+
+@media only screen and (max-width: 750px){
+	#navbar .nav{
+		flex-direction: column;
+	}
+	.nav .nav-items{
+		flex-direction: column;
+	}
+	.nav-list{
+		margin-bottom: 1rem !important;
+	}
+	.uid{
+		flex-direction: column;
+	}
+	.uid .uinfo{
+		flex-basis: 100%;
+		padding: 0 1rem;
+	}
+	.uid .uimg{
+		flex-basis: 100%;
+	}
+	.uid .uimg img{
+		width: 100%;
+	}.uid .uimg h2{
+		font-size: 1.1rem;
+		left: 5%;
+		transform: translateY(-20px);
+	}
+	.uid .uinfo h1{
+		font-size: 1.5rem;
+		line-height: 1.5rem;
+		padding: 0;
+	}
+	.info{
+		grid-template-columns: 100% !important;
+	}
+	.serv{
+		margin-bottom: 1rem;
+		height: 25vh !important;
+	}
+	.serv .col-1{
+		width: 100%;
+	}
+	.serv .col-1 h1{
+        font-size: 1.6rem;
+	}
+	#toggle{
+		display: block;
+	}
+	.response{
+		grid-template-columns: 100%;
+		justify-content: center;
+		width: 100vw;
+		margin-bottom: 25vh !important;
+	}
+	aside{
+		margin: 2rem 0;
+	}
+	#holder{
+		margin: auto;
+	}
+	.uimg{
+		display: none !important;
+	}
+	.container{
+		grid-template-columns: 100%;
+	}
+	h2{
+		font-size: .9rem;
+	}
+	h3{
+		font-size: .8rem;
+	}
+	p{
+		font-size: .7rem;
+	}
+	.cover{
+		font-size: .7rem;
+	}
+	li{
+		font-size: .7rem;
+	}
+	.price{
+		padding: 2px 5px;
+	}
+	h1{
+		font-size: 1.1rem !important;
+	}
+	.bonus{
+		font-size: .7rem;
+	}
+	.logo{
+		margin-bottom: 2rem !important;
+	}
+	footer{
+		grid-template-columns: 100%;
+		text-align: center;
+	}
+	footer ul{
+		list-style-type: none;
+	}
+	.footchild{
+		margin-bottom: 10px;
+	}
+}
+
+
+
+@media only screen and (max-width: 900px){
+	.info{
+		grid-template-columns: 80%;
+	}
+}
