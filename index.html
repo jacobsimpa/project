@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Javis Hub</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/all.css">
+</head>
+<body>
+	<div class="topnav">
+		<h1>JAVIS-HUB</h1>
+		<div class="contacts">Email</div>
+	</div>
+	<div id="navbar">
+		<div class="nav">
+			<div class="logo">JAVIS</div>
+			<ul class="nav-items">
+				<li class="nav-list"><a href="#">HOME</a></li>
+				<li class="nav-list"><a href="#">BLOG</a></li>
+				<li class="nav-list"><a href="services.html">SERVICES</a></li>
+				<li class="nav-list"><a href="#">ABOUT ME</a></li>
+			</ul>
+			<div id="toggle"><i class="fas fa-bars"></i></div>	
+		</div>
+	</div>
+
+
+
+<!------------------------------------------------------- first div ------------------------------------------->
+<section class="uid">
+	<div class="uinfo"><h1>get the best of web development and User interface</h1>
+		<h2>Amazing UX</h2>
+		<h3>Dope SEO</h3>
+		<p>
+			Here in Javis hub we giv you the best of web programing services.<br>
+            we elicit your inner desires of an amazing internet presence for your organisation,
+            institution or individual regardless of the category we make your web expirience a blast.
+            <p>
+            	we have got amazing UI professionals to tailor your web to your exact specification
+            </p>
+		</p>
+	</div>
+	<div class="uimg">
+		<img src="./images/pc.jpg">
+		<h2>Come work with us...</h2>
+	</div>
+</section>
+
+<!-------------------------x----------------------------- first div ---------------------x--------------------->
+
+<!------------------------------------------- description ------------------------------------------------->
+<h1 id="h">OUR SERVICES <hr></h1>
+<div class="info">
+	<div class="serv">
+		<div class="col-1" >
+			<img src="./images/shop.jpg">
+			<h1> E-commerce websites</h1>
+		</div>	
+	</div>
+	<div class="serv">
+		<div class="col-1">
+			<img src="./images/hotel.jpg">
+			<h1> Online hotel systems</h1>
+		</div>	
+	</div>
+	<div class="serv">
+		<div class="col-1">
+			<img src="./images/sch.jpg">
+			<h1> Online academic systems</h1>
+		</div>	
+	</div>
+</div>
+
+<!--------------------------x---------------- description -----------------------x------------------------->
+
+<!-------------------------------------------------- response ---------------------------------------->
+
+
+<div class="response">
+	<div class="main">
+		<div>
+			<p>
+			<big style="color: blue">Responsive web-design</big>
+			<p>
+				below is a list of a few inherrent <b><i>Javis-hub</i></b> services
+			</p>
+			<br>
+			<ul>
+				<li>database driven websites</li>
+				<li>SEO friendly</li>
+				<li>User-friendly (easy-navigation)</li>
+				<li>Amazing price (<s>hiked price</s>)</li>
+				<li><a href="services.html">See pricing</a></li>
+			</ul>
+
+			<br>
+		</p>
+		</div>
+	</div>
+	<aside>
+		<div id="holder">
+			<img src="./images/ipad.jpg">
+			<img src="./images/iphone.jpg">
+			<img src="./images/samsung.jpg">
+		</div>
+	</aside>
+</div>
+
+
+<!---------------------x-------------------------response -------------------x-------------------->
+
+
+<!-------------------------------------------------- marquee ---------------------------------------->
+<fieldset>
+	<marquee scrollamount="15"><span><img src="./images/logo-coca-cola.png"></span><span><img src="./images/logo-paypal.png"></span><span><img src="./images/logo-oppo.png"></span><span><img src="./images/logo-philips.png"></span><span><img src="./images/logo-godrej.png"></span></marquee>
+</fieldset>
+
+
+<!-------------------x----------------------- marquee -----------------------x------------------------->
+
+<!------------------------------------------- footer ------------------------------------------------->
+
+<footer>
+
+<div class="footchild">
+		<h1>About us</h1>
+		<div>
+			<p>
+				we are resourceful when it comes to the deveopment and
+			optimization of web pages. <br>
+			We are equally reiable as we are resourceful we deliver on time
+			</p>
+		</div>
+	</div>
+
+	<div class="footchild">
+		<h1>Contact us</h1>
+		<div>
+			<ul>
+				<li><i class="fas fa-envelope"></i>  jacobsimpa@gmail.com</li>
+				<li><i class="fas fa-phone"></i>     +2347025057527</li>
+				<li><i class="fab fa-whatsapp"></i>    +2347025057527</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="footchild">
+		<h1>Projects</h1>
+		<div>Coming soon...</div>
+	</div>
+
+	<div class="footchild">
+		<h1>Social links</h1>
+		<div>
+			<ul>
+				<li><i class="fab fa-instagram"></i></li>
+				<li><i class="fab fa-facebook"></i></li>
+				<li><i class="fab fa-twitter"></i></li>
+				<li><i class="fab fa-youtube"></i></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+
+<!--------------------x---------------------- footer ---------------------------x--------------------->
+
+
+<script>
+	let toggle = document.querySelector("#toggle");
+	let navbar = document.querySelector("#navbar");
+        
+        navbar.style.height ="7vh";
+
+	toggle.addEventListener('click', () =>{
+		if (navbar.style.height == "7vh") {
+			navbar.style.height = "25vh";
+		}
+		else{
+			navbar.style.height="7vh";
+		}
+	})
+</script>
+</body>
+</html>
