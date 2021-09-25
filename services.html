@@ -305,7 +305,55 @@ footer a{
 </footer>
 
 <!-------------------------------------------------------------------------------close  footer ------------------------------------------------------------------------->
-<script src="./js/sign.js"></script>
+<script>
+	const login = document.querySelector('.login-sect');
+const signup = document.querySelector('.sign-sect');
+const twitch = document.querySelector('#twitch');
+const logF = document.querySelector('.login');
+const signF =document.querySelector('.sign');
+
+console.log(signF)
+console.log(logF);
+
+twitch.style.transform = "translateX(40px)";
+
+signup.addEventListener('click',() =>{
+		if (twitch.style.transform == "translateX(40px)") 
+			{
+				twitch.style.transform = "translateX(225px)"; 
+				console.log("working");
+				logF.style.transform ="translateX(0px)";
+			    signF.style.transform ="translateX(350px)";
+			}
+			else console.log("its different");
+		
+})
+
+login.addEventListener('click',() =>{
+	if (twitch.style.transform == "translateX(225px)") 
+		{
+			twitch.style.transform = "translateX(40px)"; 
+			console.log("working");
+			logF.style.transform ="translateX(-350px)";
+			signF.style.transform ="translateX(0px)";
+
+		}
+	else console.log("its not working here");
+    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
 <!---<script src='./js/witch.js'></script> --->
 <script src='./js/riki.js'></script>
  </body>
