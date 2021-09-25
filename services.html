@@ -1,140 +1,231 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/nuskit.css">
+    <link rel="stylesheet" type="text/css" href="./css/all.css">
+    <title></title>
+    <script >
+    	if(window.history.replaceState){
+			window.history.replaceState(null,null,window.location.href);
+		}
+    </script>
 
-	<title>Javis Hub</title>
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<link rel="stylesheet" type="text/css" href="./css/all.css">
+	<style>
+
+        .nav{
+            display: flex;
+            justify-content: space-between;
+        }
+		
+		.form-component{
+			display: flex;
+			justify-content: space-between;
+			padding: 0 5px 0px 2px;
+			margin-bottom: .5rem;
+		}
+		.form-component-title{
+            font-size: 1rem !important;
+			font-weight:bold;
+			flex-basis:40%;
+			width:100%;
+		}
+		.form-component-details{
+			padding: auto;
+			flex-basis:60%;
+			width : 100%;
+		}
+		.form-component-details input{
+			padding : 2px;
+			width:100%;
+		}
+
+
+        footer{
+	width: 100%;
+	background: black;
+	color: white;
+	padding: 2vh 10vw 5vh;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.footchild h1{
+	margin-bottom: 2vh;
+	padding: 10px;
+}
+.footchild{
+	text-align: center;
+}
+.footchild:nth-child(4)>div ul{
+	display: flex;
+	justify-content: space-evenly;
+}
+footer a{
+	color: white;
+}
+
+    
+
+
+
+	</style>
 </head>
+<!---------------------------------------------- body ------------------------------------------------------->
 <body>
-	<div class="topnav">
-		<h1>JAVIS-HUB</h1>
-		<div class="contacts">Email</div>
+
+
+<!------------------------------------------------------------ top ----------------------------------------------------------->
+<div class="nav">
+	<div id="headers1">
+		<ul class="list style='display:block">
+			<li class="list-items"><a href="index.php">Home</a></li>
+		</ul>
 	</div>
-	<div id="navbar">
-		<div class="nav">
-			<div class="logo">JAVIS</div>
-			<ul class="nav-items">
-				<li class="nav-list"><a href="index.html">HOME</a></li>
-				<li class="nav-list"><a href="#">BLOG</a></li>
-				<li class="nav-list"><a href="#">SERVICES</a></li>
-				<li class="nav-list"><a href="#">ABOUT ME</a></li>
-			</ul>
-			<div id="toggle"><i class="fas fa-bars"></i></div>	
+	<div id="find">
+		<div id="basket">
+			<a href="cart.php"><i class="fas fa-shopping-cart"></i>&nbsp;<sup>0</sup></a>
+			</div>
 		</div>
-	</div>
-
-<!-------------------------------------------------------------------------------body ------------------------------------------------------------>
-<h2 style="text-align: center; margin-top: 3vh;">All our services includes hosting except student project or client's demand...</h2>
-<div class="container">
-	<div class="contain">
-	  <div class="sub-container">
-		<div class="header">Premium pricing</div>
-	      <div class="body">
-		    <p>below is a list of &nbsp;<b>Premium</b> service price:</p>
-		    <ul>
-			<li><span class="cover">Full ecommerce website (unlimited functionality) <span class="price"> &dollar;2000</span></span></li>
-			<li><span class="cover">Dynamic academic website (flexible) <span class="price"> &dollar;2000</span></span></li>
-			<li><span class="cover">Complete flexible blog <span class="price"> &dollar;1500</span></span></li>
-			<li><span class="cover">Healthcare Premium <span class="price"> &dollar;3000</span></span></li>
-		   </ul>
-	       </div>
-	  </div>
-
-	  <div class="sub-container">
-		<div class="header">Standard pricing</div>
-	      <div class="body">
-		    <p>below is a list of &nbsp;<b>Standard</b> service price:</p>
-		    <ul>
-			<li><span class="cover">Static e-commerce website (10 products at most) <span class="price"> &dollar;250</span></span></li>
-			<li><span class="cover">Academic website (rigid database) <span class="price"> &dollar;400</span></span></li>
-			<li><span class="cover">Healthcare basic <span class="price"> &dollar;300</span></span></li>
-		   </ul>
-	      </div>
-       </div>
-
-       <div class="sub-container">
-		<div class="header">Basic pricing</div>
-	      <div class="body">
-		    <p>below is a list of &nbsp;<b>Basic</b> service price:</p>
-		    <ul>
-			<li><span class="cover">Basic 4 page website <span class="price"> &dollar;150</span></span></li>
-			<li><span class="cover">Student project <span class="price"> &dollar;100</span></span></li>
-			<li><span class="cover">Simple blog not more than 4 pages <span class="price"> &dollar;150</span></span></li>
-		   </ul>
-	      </div>
-       </div>
-   </div>
-   <div class="sidebar">
-   	 <div class="contain">
-   	 	<h1>Bonus</h1>
-   	 	<div class="bonus">SEO(search engine optimization)</div>
-   	 	<div class="bonus">Amazing UX(user expirience)</div>
-   	 	<div class="bonus">Great UI(user interface)</div>
-   	 	<div class="bonus">Good pricing</div>
-   	 	<div class="bonus">Data optimization</div>
-   	 </div>
-   </div>
+	
 </div>
-<!------------------------------------------------------------------ close body -------------------------------------------------------------------------->
 
+ <!------------------------------------------------------------ close-top ----------------------------------------------------------->
+ <div id="signup">
+ 	<div class="create">
+ 		<div class="create-top"><span class="create-col-1 login-sect"><h5>SIGN-UP</h5></span><span class="create-col-1 sign-sect"><h5>LOGIN</h5></span></div>
+ 		<hr id="twitch">
+
+ 		<div class="sign">
+ 			<form method="post" action="signup.php">	
+ 				<div class="form-component">
+				<div class="form-component-title"> Name</div>
+ 				<div class="form-component-details"><input type="text" name="name" maxlength="14" required></div>
+				</div>
+ 				
+ 			    <div class="form-component">
+					 <div class="form-component-title">
+						 Surname
+					 </div>
+					 <div class="form-component-details">
+					 <input type="text" name="surname" maxlength="14" required>
+					 </div>
+				 </div>
+ 				
+ 				<div class="form-component">
+					 <div class="form-component-title">
+						 Password
+					 </div>
+					 <div class="form-component-details">
+					 <input type="password" name="pass" maxlength="16" required>
+					 </div>
+				 </div>
+
+				 <div class="form-component">
+					 <div class="form-component-title">
+						 Password check
+					 </div>
+					 <div class="form-component-details">
+					 <input type="password" name="pass1" maxlength="16" required>
+					 </div>
+				 </div>
+ 			    
+				 <div class="form-component">
+					 <div class="form-component-title">
+						 Phone Number
+					 </div>
+					 <div class="form-component-details">
+					 <input type="text" name="phone" maxlength="14" required>				  
+					 </div>
+				 </div>
+ 				
+ 				 <div class="form-component">
+					  <div class="form-component-title">
+						  Email
+					  </div>
+					  <div class="form-component-details">
+					  <input type="email" name="emaill" maxlength="40" required>
+					  </div>
+				  </div>
+			
+ 				<div class="form-component">
+					 <div class="form-component-title">Address</div>
+					 <div class="form-component-details">
+					 <input type="textarea" name="address" maxlength="40" required>
+					 </div>
+				 </div>
+ 				
+ 				
+ 				<div style="display: flex;justify-content: center; width:100%"><button class="btn btn2">Create Account</button></div>
+ 			</form>
+ 		</div>
+
+ 		<div class="login">
+ 			<form method="post" action="signup.php">
+ 				<table border="0" cellpadding="3" cellspacing="10px">
+ 					<tr>
+ 					<td>Email</td>
+ 					<td><input type="email" name="email" required></td>
+ 				</tr>
+ 				<tr>
+ 					<td>Password</td>
+ 					<td><input type="password" name="pass2" required></td>
+ 				</tr>
+ 				</table>
+ 				<div style="display: flex;justify-content: center;"><button class="btn">LOGIN</button></div>
+ 			</form>
+ 		</div>
+ 		
+ 	</div>
+ </div>
+
+<!------------------------------------------------------------------------------- footer ------------------------------------------------------------------------->
 <footer>
-	<div class="footchild">
-		<h1>About us</h1>
-		<div>
-			<p>
-				we are resourceful when it comes to the deveopment and
-			optimization of web pages. <br>
-			We are equally reiable as we are resourceful we deliver on time
-			</p>
-		</div>
-	</div>
+<div class="footchild">
+    <h1>About us</h1>
+    <div>
+      <p>
+        we are resourceful when it comes to the deveopment and
+      optimization of web pages. <br>
+      We are equally reiable as we are resourceful we deliver on time
+      </p>
+    </div>
+  </div>
 
-	<div class="footchild">
-		<h1>Contact us</h1>
-		<div>
-			<ul>
-				<li><i class="fas fa-envelope"></i>  jacobsimpa@gmail.com</li>
-				<li><i class="fas fa-phone"></i>     +2347025057527</li>
-				<li><i class="fab fa-whatsapp"></i>    +2347025057527</li>
-			</ul>
-		</div>
-	</div>
+  <div class="footchild">
+    <h1>Contact us</h1>
+    <div>
+      <ul>
+        <li><i class="fas fa-envelope"></i>  jacobsimpa@gmail.com</li>
+        <li><i class="fas fa-phone"></i>     +2347025057527</li>
+        <li><i class="fab fa-whatsapp"></i>    +2347025057527</li>
+      </ul>
+    </div>
+  </div>
 
-	<div class="footchild">
-		<h1>Projects</h1>
-		<div>Coming soon...</div>
-	</div>
+  <div class="footchild">
+    <h1>Projects</h1>
+    <div>Coming soon...</div>
+  </div>
 
-	<div class="footchild">
-		<h1>Social links</h1>
-		<div>
-			<ul>
-				<li><i class="fab fa-instagram"></i></li>
-				<li><i class="fab fa-facebook"></i></li>
-				<li><i class="fab fa-twitter"></i></li>
-				<li><i class="fab fa-youtube"></i></li>
-			</ul>
-		</div>
-	</div>
+  <div class="footchild">
+    <h1>Social links</h1>
+    <div>
+      <ul>
+        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+        <li><a href=""><i class="fab fa-twitter"></a></i></li>
+        <li><a href=""><i class="fab fa-youtube"></a></i></li>
+      </ul>
+    </div>
+  </div>
 </footer>
 
-<script>
-	let toggle = document.querySelector("#toggle");
-	let navbar = document.querySelector("#navbar");
-        
-        navbar.style.height ="7vh";
-
-	toggle.addEventListener('click', () =>{
-		if (navbar.style.height == "7vh") {
-			navbar.style.height = "25vh";
-		}
-		else{
-			navbar.style.height="7vh";
-		}
-	})
-</script>
-</body>
-</html>
+<!-------------------------------------------------------------------------------close  footer ------------------------------------------------------------------------->
+<script src="./js/sign.js"></script>
+<!---<script src='./js/witch.js'></script> --->
+<script src='./js/riki.js'></script>
+ </body>
+ </html>
