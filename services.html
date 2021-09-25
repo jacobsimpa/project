@@ -65,7 +65,7 @@
 
 
         footer{
-	width: 100%;
+	width: 100vw;
 	background: black;
 	color: white;
 	padding: 2vh 10vw 5vh;
@@ -89,6 +89,66 @@ footer a{
 }
 
     
+#signup{
+	height: 70vh;
+	margin-top: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.create{
+	width: 350px;
+	height: 500px;
+	overflow: hidden;
+	background: radial-gradient(#fff,#170107c7);
+	position: relative;
+}
+.login,.sign{
+	position: absolute;
+	width: 350px;
+	height: 300px;
+	margin-top: 3rem;
+	padding: 1rem;
+	overflow: hidden;
+	transition:transform 1s ease-in-out !important;
+	background: rgba(255,255,255,.5);
+}
+.login{
+	transform: translateX(-350px);
+}
+.sign{
+}
+.create-top{
+	margin-top: 1rem;
+	padding-left: .3rem;
+	padding-right: .3rem;
+	display: flex;
+	justify-content: space-between;
+}
+.create hr{
+	width: 5rem !important;
+	transform: translateX(40px);
+	transition:transform 1s ease-in-out;
+}
+.create-col-1{
+	flex-basis: 45%;
+	background: yellow;
+	cursor: pointer;
+}
+.create-col-1 h5{
+	width: 100%;
+	text-align: center;
+}
+.error{
+   position: absolute;
+   color: blue;
+   font-weight: bold;
+   bottom: 1rem;
+   left: 1rem;
+}
+
+
+/*----------------------------------------------------close login  and signup page -----------------------------------*/
 
 
 
