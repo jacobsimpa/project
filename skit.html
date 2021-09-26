@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        
+/*------------------------------------------------- global -------------------------------*/
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	font-size: 1rem;
+}
+hr{
+	width: 10rem;
+	height: .2rem;
+	background: black;
+	border: none;
+	margin-top: .5rem;
+}
+center{
+	margin-top: 5rem;
+}
+h3{
+	font-size: 1.5rem;
+}
+h4{
+	font-size: 1.2rem;
+}
+h5{
+	font-size: 1rem;
+}
+ul{
+	list-style-type: none;
+}
+.rating .fa{
+	color: #170107c7;
+	border: red;
+	border-color: red;
+	cursor: pointer;
+}
+
+.btn{
+	padding: .3rem; 
+	background: linear-gradient(#fff,#170107c7);
+	font-weight: bold;
+	width: 50%;
+}
+.btn:hover{
+	background: red;
+	color: white;
+}
+
+/*-------------------------------------------------close - global -------------------------------*/
+
+
+/*------------------------------------------------- Top -----------------------------------------*/
+.topnav{
+	width: 100%;
+	height: 4vh;
+	background: black;
+	display: flex;
+	align-items: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+#basket a{
+	color: white;
+}
+ #see{
+	flex-basis: 80%;
+	display: flex;
+	justify-content: flex-end;
+}
+.nav{
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+	width: 100%;
+	height: 5vh;
+	background:#170107c7;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#toggle{
+	display: none;
+	position: absolute;
+	color: white;
+}
+#logo{
+	flex-basis: 20%;
+	font-size: 2rem;
+	cursor: pointer;
+	color: white;
+	font-weight: bold;
+}
+#find{
+	/*flex-basis: 20%; */
+	display: flex;
+	justify-content: space-between;
+}
+.topnav input[type="text"]{
+	border: none;
+	padding-left: 4px;
+	height: 1.3rem;
+}
+#basket{
+	color: white;
+	margin-left: 2rem;
+}
+.user{
+	color: white !important;
+}
+#search{
+	cursor: pointer;
+	height: 1.3rem;
+}
+.list{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+}
+.list-items{
+	margin-right: 1rem;
+	font-size: .7rem;
+}
+.list-items a, #smith{
+	padding: 5px;
+	color: white;
+}
+.list-items a:hover{
+	background: #f3f3f3cc;
+	color: black;
+}
+#wrapper{
+	position: absolute;
+	overflow: hidden;
+	top: 5vh;
+	left: 0;
+	height: 0;
+	background:#170107c7;
+	transition: height 2s ease;
+}
+#wrapper .list{
+	flex-direction: column;
+}
+#wrapper .list .list-items{
+	margin-bottom: 10px;
+}
+#wrapper .list .list-items a{
+	font-size: .6rem;
+}
+
+/*------------------------------------------------- close Top ------------------------------------------*/
+
+
+/*------------------------------------------------------------------------- body ------------------------------------------------------------------*/
+
+/*------------------------------------------------- main ------------------------------------------*/
+.container{
+	padding: 3rem 1rem 1rem 2rem;
+}
+
+.advert{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 50% 40%;
+	justify-content: space-around;
+}
+.advert h1{
+	font-size: 3rem;
+}
+.img-first{
+	position: relative;
+	border-radius: 10vh;
+	color: red;
+	background-image: url('../images/laptop1.jpeg');
+	background-position: center;
+	background-size: cover;
+	height: 40vh;
+}
+.view{
+	background: #170107c7;
+	border-radius: 5px;
+	border: none;
+}
+.view a{
+	color: white;
+}
+.view form button{
+	background: black;
+	color: white;
+	cursor: pointer;
+	padding: 2px 3px;
+}
+
+.add-to-cart{
+	padding: 2px 3px;
+	background: #170107c7;
+	cursor: pointer;
+	color: white;
+}
+
+.top-products{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-left: 5rem;
+	padding-right: 5rem;
+	margin: 2rem 0 2rem;
+}
+.top-1{
+	flex-basis: 30%;
+	width: 100%;
+	margin-bottom: 2rem;
+}
+.top-1 img{
+	width: 100%;
+	height: 300px;
+}
+
+.sub-container{
+	width: 100%;
+	background: radial-gradient(#fff,#170107c7);
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	height: 50vh;
+	margin-bottom: 5rem;
+}
+.contain{
+	display: flex;
+	max-width: 1000px;
+}
+.contain #img{
+	flex-basis: 50%;
+}
+.contain #img img{
+	width: 100%;
+}
+
+
+
+/*----------------------------------------------------- login  and signup page -----------------------------------*/
+#signup{
+	height: 70vh;
+	margin-top: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.create{
+	width: 350px;
+	height: 500px;
+	overflow: hidden;
+	background: radial-gradient(#fff,#170107c7);
+	position: relative;
+}
+.login,.sign{
+	position: absolute;
+	width: 350px;
+	height: 300px;
+	margin-top: 3rem;
+	padding: 1rem;
+	overflow: hidden;
+	transition:transform 1s ease-in-out !important;
+	background: rgba(255,255,255,.5);
+}
+.login{
+	transform: translateX(-350px);
+}
+.sign{
+}
+.create-top{
+	margin-top: 1rem;
+	padding-left: .3rem;
+	padding-right: .3rem;
+	display: flex;
+	justify-content: space-between;
+}
+.create hr{
+	width: 5rem !important;
+	transform: translateX(40px);
+	transition:transform 1s ease-in-out;
+}
+.create-col-1{
+	flex-basis: 45%;
+	background: yellow;
+	cursor: pointer;
+}
+.create-col-1 h5{
+	width: 100%;
+	text-align: center;
+}
+.error{
+   position: absolute;
+   color: blue;
+   font-weight: bold;
+   bottom: 1rem;
+   left: 1rem;
+}
+
+
+/*----------------------------------------------------close login  and signup page -----------------------------------*/
+
+/*----------------------------------------------close-main ------------------------------------------*/
+
+/*------------------------------------------------- FOOTER ---------------------------------------------*/
+footer{
+	width: 100vw;
+	background: black;
+	color: white;
+	padding: 2vh 10vw 5vh;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.footchild h1{
+	margin-bottom: 2vh;
+	padding: 10px;
+}
+.footchild{
+	text-align: center;
+}
+.footchild:nth-child(4)>div ul{
+	display: flex;
+	justify-content: space-evenly;
+}
+footer a{
+	color: white;
+}
+
+/*-----------------------------------------------CLOSE FOOTER ------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------- cart-page ----------------------------------------------------*/
+#cartcaption{
+	background: #170107c7;
+	color: white;
+	margin-bottom: 1rem;
+}
+.cartHeader{
+	display: flex;
+	 width: 700px; 
+	 justify-content:space-between; 
+	 margin-bottom: 2rem; 
+	 font-weight: bold;
+}
+.thP{
+	flex-basis: 50%;
+}
+.CHtotal,.thQ,.thIC,.thS{
+	flex-basis: 10% !important;
+}
+.productsIn{
+	width: 700px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2rem;
+
+}
+
+.products{
+	flex-basis: 50%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid black;
+}
+.img-c {
+	flex-basis: 40%;
+}
+.prod-img{
+	width: 70px;
+	height: 60px;
+}
+.products .delete{
+	flex-basis: 10%;
+}
+.products .prod-name{
+	flex-basis: 50%;
+}
+.prod-size{
+	flex-basis: 10% !important;
+	width: 100%;
+}
+.prod-incart{
+	flex-basis: 10% !important;
+	width: 100%;
+}
+.prod-quality{
+	flex-basis: 10% !important;
+	width: 100%;
+}
+.prod-price{
+	flex-basis: 10% !important;
+	width: 100%;
+}
+
+.total{
+	display: flex;
+	width: 700px;
+	justify-content: flex-end;
+}
+#cartcost{
+	width: 150px;
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+}
+.fomdet{
+	width: 700px;
+	display: flex;
+}
+#clear,#submiti{
+	background: #170107c7;
+	color: #fff;
+	padding: 5px;
+}
+
+/*----------------------------------------------------------------------------------------------close-cart-page------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------------------------- details- page ------------------------------------------- */
+
+
+
+
+
+#det-img{
+	position: relative;
+	width: 350px;
+	height: 300px;
+}
+.det1{
+	width: 150px;
+    height: 200px;
+}
+
+.det-desc p{
+	padding: 2px;
+}
+
+#entails{
+	display: flex;
+	justify-content: space-evenly;
+}
+.sub-top-prod{
+	display: flex;
+	justify-content: space-between;
+}
+.nita{
+	position: relative;
+	flex-basis: 15%;
+	width: 100%;
+}
+.nita img{
+	width: 100%;
+}
+.nita .view{
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+}
+
+
+
+
+/*----------------------------------------------------------------------close-body ------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------ responsiveness -------------------------------------------------------------- */
+
+@media only screen and (max-width: 1200px){
+	a,button{
+		font-size: .83rem;
+	}
+	h5{
+		font-size: .88rem;
+	}
+	h4{
+		font-size: .93rem;
+	}
+	h3{
+		font-size: 1.1rem;
+	}
+	h2{
+		font-size: 1.3rem;
+	}
+	*{
+		font-size: .83rem;
+	}
+	h1{
+		font-size: 1.4rem !important;
+	}
+	.img-first{
+		height: 250px !important;
+		border-radius: 0;
+	}
+	.top-products{
+		justify-content: space-evenly;
+	}
+	.top-1{
+		flex-basis: 30%;
+	}
+	.top-1 img,#det-img{
+		width: 200px;
+		height: 150px;
+	}
+	select{
+		font-size: .73rem;
+	}
+	option{
+		font-size: .73rem;
+	}
+	.cartHeader{
+		width: 500px;
+	}
+	.productsIn,.total{
+		width: 500px;
+	}
+	.thIC,.thS,.thQ{
+		text-align: center !important;
+	}
+	.fa-user{
+		font-size: .6rem !important;
+	}
+	#wrapper .list .list-items{
+		margin-bottom: .6rem !important;
+	}
+	#logo{
+		font-size: 2rem;
+	}
+
+
+}
+
+
+/*------------------------------------------------------------------------------Tablets ---------------------------------------------*/
+
+@media only screen and (max-width: 770px){
+	  #headers .list{
+    	display: none;
+    }
+    .user i.fas, .user span a{
+    	font-size: 1rem !important;
+    }
+
+	#toggle{
+		display: block;
+	}
+	#toggle i.fas{
+		font-size: 1rem !important;
+	}
+	#basket a i.fas{
+		font-size: 1rem !important;
+	}
+	
+	a,button{
+		font-size: .73rem;
+	}
+	h5{
+		font-size: .78rem;
+	}
+	h4{
+		font-size: .83rem;
+	}
+	h3{
+		font-size: .93rem;
+	}
+	h2{
+		font-size: 1.2rem;
+	}
+	*{
+		font-size: .73rem;
+	}
+	h1{
+		font-size: 1.4rem !important;
+	}
+	.img-first{
+		height: 180px !important;
+		border-radius: 0;
+	}
+	.top-products{
+		justify-content: space-evenly;
+	}
+	.top-1{
+		flex-basis: 30%;
+	}
+	.top-1 img,#det-img{
+		width: 150px;
+		height: 130px;
+	}
+	select{
+		font-size: .73rem;
+	}
+	option{
+		font-size: .73rem;
+	}
+	.cartHeader{
+		width: 500px;
+	}
+	.productsIn,.total{
+		width: 500px;
+	}
+	.thIC,.thS,.thQ{
+		text-align: center !important;
+	}
+	.fa-user{
+		font-size: .6rem !important;
+	}
+	footer{
+		grid-template-columns: repeat(2,1fr);
+	}
+	#logo{
+		font-size: 2rem;
+	}
+
+
+}
+
+/*-------------------------------------------------------------------------------- mobile phone ---------------------------------------------*/
+
+@media only screen and (max-width: 500px){
+	a,button{
+		font-size: .68rem;
+	}
+	h5{
+		font-size: .73rem;
+	}
+	h4{
+		font-size: .78rem;
+	}
+	h3{
+		font-size: .88rem;
+	}
+	h2{
+		font-size: .98rem;
+	}
+	*{
+		font-size: .68rem;
+	}
+	h1{
+		font-size: 1rem !important;
+	}
+	#toggle i.fas{
+		font-size: 1rem !important;
+	}
+	.img-first{
+		height: 100px !important;
+		border-radius: 0;
+	}
+	.top-products{
+		justify-content: space-evenly;
+	}
+	.top-1{
+		flex-basis: 40%;
+	}
+	.top-1 img, #det-img{
+		width: 75px;
+		height: 70px;
+	}
+	select{
+		font-size: .6rem;
+	}
+	option{
+		font-size: .6rem;
+	}
+	.cartHeader{
+		width: 400px;
+	}
+	.productsIn,.total{
+		width: 400px;
+	}
+	.thIC,.thS,.thQ{
+		text-align: center !important;
+	}
+	.fa-user{
+		font-size: .5rem !important;
+	}
+	#logo{
+		font-size: 2rem;
+	}
+
+
+}
+
+
+/*-------------------------------------------------------------------------------- mobile phone small ---------------------------------------------*/
+
+@media only screen and (max-width: 390px){
+	#headers .list{
+		display: block;
+		position: absolute;
+		width: 250px;
+		top: 2.6rem;
+		left: 0;
+		height: 0;
+		overflow: hidden;
+		background: #170107c7;
+		transition: height 1s ease-in-out;
+	}
+
+	#wrapper .list .list-items{
+		margin-bottom: .6rem;
+	}
+
+	a,button{
+		font-size: .6rem;
+	}
+	h5{
+		font-size: .65rem;
+	}
+	h4{
+		font-size: .7rem;
+	}
+	h3{
+		font-size: .8rem;
+	}
+	h2{
+		font-size: .9rem;
+	}
+	*{
+		font-size: .6rem;
+	}
+	h1{
+		font-size: 1rem !important;
+	}
+	.img-first{
+		height: 100px !important;
+		border-radius: 0;
+	}
+	.top-1{
+		flex-basis: 45%;
+	}
+	.top-1 img{
+		width: 70px;
+		height: 70px;
+	}
+	select{
+		font-size: .5rem;
+	}
+	option{
+		font-size: .6rem;
+	}
+	.cartHeader{
+		width: 300px;
+	}
+	.productsIn,.total{
+		width: 300px;
+	}
+	.thIC,.thS,.thQ{
+		text-align: center !important;
+	}
+	.fa-user{
+		font-size: .5rem !important;
+	}
+	#logo{
+		font-size: 1.5rem;
+	}
+
+
+}
+
+    </style>
+</head>
+
+
+<!---------------------------------------------- body ------------------------------------------------------->
+<body>
+
+
+<!------------------------------------------------------------ top ----------------------------------------------------------->
+<div class="topnav">
+	<div id="logo">E<i>assy</i></div>
+	<div id="see"><form method="post" action="search.php"><input type="text" name="search"><button id="search"><i class="fas fa-search"></i></button></form></div>
+</div>
+
+<div class="nav">
+	<div id="wrapper">
+		<ul class="list">
+			<li class="list-items"><a href="index.php">Home</a></li>
+			<li class="list-items"><a href="men's.php">Men's Collections</a></li>
+			<li class="list-items"><a href="women's.php">Women's Collection</a></li>
+			<li class="list-items"><a href="gadgets.php">Gadgets</a></li>
+			<li class="list-items"><a href="accessories.php">Accessories</a></li>
+			<li class="list-items"><a href="about.php">About-us</a></li>
+		</ul>
+	</div>
+	<div id="toggle">Hola</div>
+	<div id="headers">
+		<ul class="list">
+			<li class="list-items"><a href="index.php">Home</a></li>
+			<li class="list-items"><a href="men's.php">Men's Collections</a></li>
+			<li class="list-items"><a href="women's.php">Women's Collection</a></li>
+			<li class="list-items"><a href="gadgets.php">Gadgets</a></li>
+			<li class="list-items"><a href="accessories.php">Accessories</a></li>
+			<li class="list-items"><a href="about.php">About-us</a></li>
+		</ul>
+	</div>
+	<div id="find">
+		<div class="user">
+			<?php
+			if($loggedin)
+			echo "<a href='profile.php' style='text-decoration:none; color:white;'>".
+			"<i class='fas fa-user'></i> &nbsp;".
+			"<span>$user</span></a>";
+			else echo "<i class='fas fa-user'></i> <span>$user</span></a>";
+			?>
+		</div>
+		<div id="basket">
+			<a href="cart.php"><i class="fas fa-shopping-cart"></i>&nbsp;<sup>0</sup></a>
+			</div>
+		</div>
+	
+</div>
+
+ <!------------------------------------------------------------ close-top ----------------------------------------------------------->
+
+
+<!--------------------------------------------------------------------------------- main content ---------------------------------------------------------->
+ <main class="container">
+ 	<div class="advert">
+ 		<div>
+ 			<h1>HURRAY !!!</h1>
+ 			<br>
+ 			<h4>Source your products online at affordable prices from the comfort of your home</h4>
+ 			<br>
+ 			<h5>E-Commerce made easy</h5>
+ 		</div>
+ 		<div >
+ 			<div class="img-first"></div>
+ 		</div>
+ 	</div>
+<br>
+
+ 	<center><h3>Top-products</h3><hr></center>
+
+ 	<div class="top-products">
+ 		 <?php
+
+      $result = queryMysql("SELECT * FROM products ORDER BY RAND()");
+      $count = $result->num_rows;
+       if($count !=0)
+      {  
+        for($i =0; $i < $count; $i++)
+        {
+          $row = $result->fetch_array(MYSQLI_ASSOC);
+               echo "<div class='top-1'>";
+               echo "<img src='".$row['mainp']."'>";
+               echo "<h3 class='name'>".$row['commodity']."</h3>";
+               echo "<div class='price'><b>PRICE</b> : &#8358;<span>".$row['price']."</span></div>";
+               echo " <div class='size-home'><b>SIZE</b> : <select name='size'>";
+               if($row['category'] == 'watches')
+               {
+                echo "<option>All Sizes</option>";
+               }
+               elseif($row['category'] == 'trousers')
+               {
+                echo"<option>30</option><option>31</option><option>32</option><option>33</option><option>34</option>";
+               }
+               elseif($row['category'] == 'shirts')
+               {
+                echo "<option>M</option><option>L</option><option>XL</option><option>XXL</option><option>XXXL</option>";
+               }
+               elseif($row['category'] == 'shorts')
+               {
+                  
+               }
+               elseif ($row['category'] == 'shoes') {
+                   echo "<option>38</option><option>40</option><option>42</option><option>43</option><option>44</option>";
+               }
+               elseif ($row['category']== 'slides') {
+                    echo "<option>38</option><option>40</option><option>42</option><option>43</option><option>44</option>";
+               }
+               else{
+                echo "<option>ALL</option>";
+               }
+
+              echo "</select></div>";
+              echo " <div style='margin-bottom: .3rem;''><b>Quality</b> : <span class='quality'>".$row['status']."</span></div>";
+              echo "<span > <button class='add-to-cart'>BUY <i class='fas fa-shopping-cart'></i></button></span>&nbsp;&nbsp;&nbsp;&nbsp;";
+              echo "<span class='view'><form method='post' action='details.php' style='display: inline;''><input type='hidden' name='product-name' value='".$row['commodity']."'><input type='hidden' name='vendor' value='".$row['vendor']."'><button>view more <span>&#8594;</span></button></form></span>";
+              echo "</div>";
+        }
+      }
+    ?>
+ 	</div> 
+</main>
+
+ <div class="sub-container">
+ 	<center>
+ 		<div class="contain">
+ 			<div id="img">
+ 				<img src="./images/exclusive.png">
+ 			</div>
+ 			<div>
+ 				<h1>SMART CASIO WRIST WATCH</h1>
+ 				<h3>AMAZING OFFER</h3>
+ 				<p>
+ 					<i class="fa fa-quote-left"></i>
+ 					Make good use of this opportunity to get an amazing deal on casio smart watch
+ 					For this week's <i>Bonanza</i> we will be giving out casio on a discounted price taking 30% off
+ 					<i class="fa fa-quote-right"></i>
+ 				</p>
+ 			</div>
+ 		</div>
+ 	</center>
+ </div>
+
+ <main class="container">
+
+<center><h3>FEATURED PRODUCTS</h3><hr></center>
+
+ 	<div class="top-products">
+ 		<div class="top-1">
+ 			<img src="./images/laptop2.jpg">
+ 			<h3>Assus Rog Zephyrus</h3>
+ 			<p>this is one of the craziest gaming laptops in the world</p>
+ 			<div>Price : &#8358;850000</div>
+ 			<div class="rating">Rating: &nbsp;
+ 				<i class="fa fa-star"></i>
+ 				<i class="fa fa-star"></i>
+ 				<i class="fa fa-star"></i>
+ 				<i class="fa fa-star-half-alt"></i>
+ 				<i class="far fa-star" aria-hidden="true"></i>
+ 			</div>
+ 			<div style="margin-bottom: 1rem;">Quality : Fairly Used</div>
+ 			<span > <button>BUY-NOW<i class="fa fa-download"></i></button></span> <span class="view"><a href="">view more <span>&#8594;</span></i></a></span>
+ 		</div>
+ 		<div class="top-1">
+ 			<img src="./images/laptop2.jpg">
+ 			<h3>Assus Rog Zephyrus</h3>
+ 			<p>this is one of the craziest gaming laptops in the world</p>
+ 			<div>Price : &#8358;850000</div>
+ 			<div style="margin-bottom: 1rem;">Quality : Fairly Used</div>
+ 			<span > <button>BUY-NOW<i class="fa fa-download"></i></button></span> <span class="view"><a href="">view more <span>&#8594;</span></i></a></span>
+ 		</div>
+ 		<div class="top-1">
+ 			<img src="./images/laptop2.jpg">
+ 			<h3>Assus Rog Zephyrus</h3>
+ 			<p>this is one of the craziest gaming laptops in the world</p>
+ 			<div>Price : &#8358;850000</div>
+ 			<div style="margin-bottom: 1rem;">Quality : Fairly Used</div>
+ 			<span > <button>BUY-NOW<i class="fa fa-download"></i></button></span> <span class="view"><a href="">view more <span>&#8594;</span></i></a></span>
+ 		</div>
+ 		<div class="top-1">
+ 			<img src="./images/laptop2.jpg">
+ 			<h3>Assus Rog Zephyrus</h3>
+ 			<p>this is one of the craziest gaming laptops in the world</p>
+ 			<div>Price : &#8358;850000</div>
+ 			<div style="margin-bottom: 1rem;">Quality : Fairly Used</div>
+ 			<span > <button>BUY-NOW<i class="fa fa-download"></i></button></span> <span class="view"><a href="">view more <span>&#8594;</span></i></a></span>
+ 		</div>
+ 		<div class="top-1">
+ 			<img src="./images/laptop2.jpg">
+ 			<h3>Assus Rog Zephyrus</h3>
+ 			<p>this is one of the craziest gaming laptops in the world</p>
+ 			<div>Price : &#8358;850000</div>
+ 			<div style="margin-bottom: 1rem;">Quality : Fairly Used</div>
+ 			<span > <button>BUY-NOW<i class="fa fa-download"></i></button></span> <span class="view"><a href="">view more <span>&#8594;</span></i></a></span>
+ 		</div>
+ 		<div class="top-1">
+ 			<img src="./images/laptop2.jpg">
+ 			<h3>Assus Rog Zephyrus</h3>
+ 			<p>this is one of the craziest gaming laptops in the world</p>
+ 			<div>Price : &#8358;850000</div>
+ 			<div style="margin-bottom: 1rem;">Quality : Fairly Used</div>
+ 			<span > <button>BUY-NOW<i class="fa fa-download"></i></button></span> <span class="view"><a href="">view more <span>&#8594;</span></i></a></span>
+ 		</div>
+ 	</div>
+
+ </main>
+
+
+<!---------------------------------------------------------------------------------close main content ---------------------------------------------------------->
+
+
+<!------------------------------------------------------------------------------- footer ------------------------------------------------------------------------->
+
+<footer>
+<div class="footchild">
+    <h1>About us</h1>
+    <div>
+      <p>
+        we are resourceful when it comes to the deveopment and
+      optimization of web pages. <br>
+      We are equally reiable as we are resourceful we deliver on time
+      </p>
+    </div>
+  </div>
+
+  <div class="footchild">
+    <h1>Contact us</h1>
+    <div>
+      <ul>
+        <li><i class="fas fa-envelope"></i>  jacobsimpa@gmail.com</li>
+        <li><i class="fas fa-phone"></i>     +2347025057527</li>
+        <li><i class="fab fa-whatsapp"></i>    +2347025057527</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footchild">
+    <h1>Projects</h1>
+    <div>Coming soon...</div>
+  </div>
+
+  <div class="footchild">
+    <h1>Social links</h1>
+    <div>
+      <ul>
+        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+        <li><a href=""><i class="fab fa-twitter"></a></i></li>
+        <li><a href=""><i class="fab fa-youtube"></a></i></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-------------------------------------------------------------------------------close  footer ------------------------------------------------------------------------->
+
+<!----------------------------------------------close body ------------------------------------------------------->
+
+<script>
+    
+const toggle = document.querySelector("#toggle");
+const view = document.querySelector("#wrapper");
+
+view.style.height = "0px";
+
+toggle.addEventListener('click', ()=>{
+	console.log(view)
+      if(view.style.height == "0px")
+      {
+         view.style.height = "150px";
+      }
+      else
+      {
+      	view.style.height="0px";
+      }
+})
+</script>
+<script>
+    let btn = document.querySelectorAll('.add-to-cart');
+let total  = document.querySelector('.total');
+let Itemz = document.querySelector('.productsIn');
+let cartItems =  JSON.parse(localStorage.getItem('cartItems'));
+
+
+if(Itemz)
+{
+	displayCart();
+}
+
+
+for(let i =0; i<btn.length; i++)
+{
+	btn[i].addEventListener('click',(e)=>{
+	let name = btn[i].parentElement.parentElement.querySelector('.name').innerHTML;
+	let price = parseInt(btn[i].parentElement.parentElement.querySelector('.price').querySelector('span').innerHTML);
+	let size = btn[i].parentElement.parentElement.querySelector('.size-home').querySelector('select').value;
+	let quality = btn[i].parentElement.parentElement.querySelector('.quality').textContent;
+	let img =  btn[i].parentElement.parentElement.querySelector('img').src;
+	let vendor =  btn[i].parentElement.parentElement.querySelector('.view').querySelector('form').vendor.value
+
+	let product = {
+		name : name,
+		price : price,
+		size : size,
+		quality : quality,
+		img : img,
+		vendor:vendor,
+		inCart : 1
+	}
+	setItem(product)
+	totalCost(product)
+	
+
+})
+}
+
+
+
+
+
+
+function setItem(item)
+{   
+	cartItems = JSON.parse(localStorage.getItem('cartItems'))
+
+	if(cartItems == null)
+	{   
+	    creek = {
+			[item.name]:item
+		}
+	    cartItems = JSON.stringify(creek)
+	    localStorage.setItem('cartItems',cartItems)
+	    localStorage.setItem('productsInCart',1)
+	}
+	else
+	{   
+		if(cartItems[item.name] == undefined)
+		{
+		cartItems = {
+			...cartItems,
+			[item.name]:item
+		}
+		}
+		else cartItems[item.name].inCart += 1;
+
+
+	    let bird = Object.keys(cartItems)
+		localStorage.setItem('productsInCart', bird.length)
+		localStorage.setItem('cartItems',JSON.stringify(cartItems))
+	}	
+
+
+		
+	onloadcart();
+}
+
+function onloadcart(){
+	num = localStorage.getItem('productsInCart');
+	basket = document.querySelector('#basket sup');
+
+	if(num != null)
+	{
+		basket.innerHTML = num;
+	}
+}
+/*
+function totalCost(item)
+{
+	total = localStorage.getItem('totalCost');
+	if(total == null)
+	{
+		cost =parseInt(item.price);
+		localStorage.setItem('totalCost',cost)
+	}
+	else{
+		localStorage.setItem('totalCost',parseInt(total)+parseInt(item.price));
+	}
+}
+*/
+function totalCost(product){
+    let cartCost = localStorage.getItem('totalCost')
+
+    if(cartCost != null){
+        cartCost = parseInt(cartCost)
+        localStorage.setItem('totalCost', cartCost + product.price)
+
+    }else{
+        localStorage.setItem('totalCost', product.price)
+    }
+    
+
+ }
+
+
+
+ function displayCart(){
+ let Itemzi = document.querySelector('.productsIn');
+ let cartI =  JSON.parse(localStorage.getItem('cartItems'));
+ let totalP = localStorage.getItem('totalCost');
+ let detail = document.querySelector('.fomdet');
+
+if (cartI !=null)
+{
+	Itemzi.innerHTML="";
+	total.innerHTML="";
+
+	Object.values(cartI).map(item =>{
+		Itemz.innerHTML += `
+		<div class='products'>
+		<span class="delete"><i class="fas fa-trash"></i></span>
+		<span class='img-c'><img class='prod-img' src='${item.img}'></span>
+		<span class='prod-name'>${item.name}</span>
+		</div>
+		<div class='prod-size'>${item.size}</div>
+		<div class='prod-incart'>${item.inCart}</div>
+		<div class='prod-quality'>${item.price}</div>
+		<div class='prod-price'>`+item.price * item.inCart +`</div>
+		</div>`
+	})
+
+	
+     total.innerHTML =`<div id='cartcost'><span>Total</span><span>&#8358;${totalP}</span></div>`
+
+
+	let del = document.querySelectorAll('.delete');
+
+	for(let i =0; i<del.length; i++)
+	{
+		del[i].addEventListener('click', (e)=>{
+          cart = JSON.parse(localStorage.getItem('cartItems'))
+          incart = JSON.parse(localStorage.getItem('productsInCart'))
+          cost = JSON.parse(localStorage.getItem('totalCost'))
+          strange = Object.keys(cart)[i];
+          price = Object.values(cart)[i].price;
+          amt = Object.values(cart)[i].inCart;
+          wako = amt * price;
+
+          Ncost = cost - wako
+          Ncart = incart -1
+          delete cart[strange];
+          cart =JSON.stringify(cart)
+         
+          localStorage.setItem('cartItems',cart);
+          localStorage.setItem('productsInCart',Ncart);
+          localStorage.setItem('totalCost',Ncost);
+      
+  
+          
+           onloadcart();
+           displayCart();
+
+		})
+	}
+
+    timi = localStorage.getItem('cartItems');
+    tumi = localStorage.getItem('totalCost');
+	detail.innerHTML="<span><button id='clear'>clear</button></span> <form name='cast' method='post' action='cart.php'  style='display:inline-flex'><input type='hidden' name='cartdetails' value='"+timi+"'><input type='hidden' name='amount' value='"+tumi+"'><button id='submiti'>Complete your order</button></form>";
+    
+
+	psst = document.querySelector('#clear');
+	hey = document.querySelector('#submiti');
+	errorC = document.querySelector(".cart-error")
+
+	psst.addEventListener('click', ()=>{
+		localStorage.clear();
+		total.innerHTML =`<div id='cartcost'><span>Total</span><span>0</span></div>`;
+		document.querySelector('#basket sup').innerHTML =0;
+		displayCart();
+
+	})
+
+	cast.addEventListener('submit',(e)=>{
+		e.preventDefault()
+		ree = Object.keys(JSON.parse(timi))
+        if(ree.length>10)
+        {
+        	errorC.innerHTML = "<h2 style='text-align:center;color:red;margin-top:2rem;'> Items in cart can not be more than 10</h2>"
+        }
+        else cast.submit();
+		
+	})
+
+}
+else{
+      Itemzi.innerHTML="<div><h1>Your Cart is empty</h1></div>";
+ }
+}
+
+
+onloadcart();
+</script>
+
+
+
+
+</body>
+</html>
